@@ -7,7 +7,6 @@
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: red;
   font-variation-settings: "wdth" 100;
 }
 .Inter-normal {
@@ -25,13 +24,13 @@ body {
   margin: 0 auto;
 }
 section {
-  margin: 100px auto;
+  margin: 80px auto;
 }
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px;
 }
 .logo {
   display: flex;
@@ -84,6 +83,7 @@ section {
 .heading {
   color: #e95a08;
   font-size: 65px;
+  font-weight: 600;
 }
 .black {
   color: black;
@@ -103,16 +103,63 @@ section {
   flex-direction: column;
 }
 .paragraph {
-  margin-top: 30px;
+  margin-top: 22px;
   max-width: 600px;
   font-size: 20px;
   color: #00000080;
-  line-height: 1.5;
+  line-height: 27px;
 }
 
-
+.plant-heading {
+  color: #e95a08;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.plant-para {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 126px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.plant-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plant-section img {
+  width: 100%;
+  height: auto;
+}
+.h3 {
+  margin-top: 20px;
+  color: rgba(17, 17, 17, 1);
+  size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.money {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #e95a08;
+  color: rgba(255, 255, 255, 1);
+  width: 270px;
+  height: 50px;
+  border: none;
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 768px) {
- 
+    section{
+        margin: 50px auto;
+    }
   .cart-mobile {
     display: block;
   }
@@ -132,7 +179,7 @@ section {
   }
   .content2 {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0 20px;
   }
 
@@ -152,11 +199,42 @@ section {
   .heading {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
   }
   .paragraph {
+    margin-top: 10px;
     font-size: 14px;
-    margin: 0;
   }
-  
+  .plant-heading {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .plants {
+    margin-top: 0;
+    padding: 0;
+  }
+  .plant-para {
+    font-size: 14px;
+    padding: 0;
+    padding: 0 20px;
+  }
+  .plant-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .plant-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .h3,
+  .money,
+  .btn {
+    font-size: 16px;
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
 }
