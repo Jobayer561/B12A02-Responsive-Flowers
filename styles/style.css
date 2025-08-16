@@ -192,7 +192,22 @@ section {
 filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 
 }
- 
+.deals{
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #e95a08;
+  text-align: center;
+
+}
+ .deals-para{
+  margin-top: 30px;
+  font-size: 22px;
+  color:#00000080;
+  text-align: center;
+  padding: 0 126px;
+  margin-bottom: 50px;
+ }
     
 @media screen and (max-width: 768px) {
   section {
@@ -294,6 +309,13 @@ filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
       font-size: 14px;
       padding: 0 20px;
     }
-   
-    
+   .deals{
+    margin-top: 40px;
+    font-size: 24px
+   }
+ .deals-para{
+  margin-top: 16px;
+  font-size: 14px;
+  padding: 0 30px;
+ }    
 }
