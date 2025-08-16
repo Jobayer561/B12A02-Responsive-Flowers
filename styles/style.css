@@ -23,6 +23,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 section {
   margin: 80px auto;
 }
@@ -70,6 +71,7 @@ section {
 .cart {
   color: rgb(0, 0, 0);
   font-weight: 400;
+  margin-right: 5px;
 }
 .cart-mobile {
   display: none;
@@ -101,6 +103,10 @@ section {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+}
+.hero-flower {
+  flex: 1;
+  width: 570px;
 }
 .paragraph {
   margin-top: 22px;
@@ -154,12 +160,42 @@ section {
   width: 270px;
   height: 50px;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.store {
+  display: flex;
+  gap: 60px;
+}
+.plants-lover {
+  margin-top: 38px;
+}
+.lover-heading {
+  color: #000000;
+  font-size: 50px;
+  font-weight: bold;
+}
+.lover-paragraph {
+  margin-top: 10px;
+  margin-left: 35px;
+  font-size: 22px;
+  color: #00000080;
+}
+.image{
+  position: relative;
+}
+.badge {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top:-100px;
+  right:-90px;
+filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+
 }
 @media screen and (max-width: 768px) {
-    section{
-        margin: 50px auto;
-    }
+  section {
+    margin: 50px auto;
+  }
   .cart-mobile {
     display: block;
   }
@@ -208,13 +244,9 @@ section {
     font-size: 24px;
     margin-bottom: 5px;
   }
-  .plants {
-    margin-top: 0;
-    padding: 0;
-  }
+ 
   .plant-para {
     font-size: 14px;
-    padding: 0;
     padding: 0 20px;
   }
   .plant-section {
@@ -237,4 +269,27 @@ section {
   .btn {
     margin-bottom: 10px;
   }
+  .store{
+      flex-direction: column;
+      gap:18px;
+    }
+    .flower-store{
+      width: 100%;
+      padding: 0 20px;
+
+    }
+    .badge{
+      display: none;
+    }
+    .plants-lover {
+  margin-top: 0;
+}
+    .lover-heading{
+      padding: 0 20px;
+      font-size: 20px;
+    }
+    .lover-paragraph{
+      font-size: 14px;
+      padding: 0 20px;
+    }
 }
