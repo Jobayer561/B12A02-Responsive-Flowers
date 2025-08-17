@@ -322,7 +322,7 @@ section {
 .footer {
   display: flex;
   gap: 110px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .footer-logo p {
   margin-top: 5px;
