@@ -209,19 +209,19 @@ section {
   border-radius: 14px;
 }
 
-
 .grid {
   margin-top: 80px;
   display: grid;
-  grid-template-columns: 364px 753px; 
-  grid-template-rows: 206px 206px;   
+  grid-template-columns: 364px 753px;
+  grid-template-rows: 206px 206px;
   gap: 28px;
   grid-template-areas:
     "card1 card3"
     "card2 card3";
 }
 
-.small, .large {
+.small,
+.large {
   border-radius: 14px;
   background-size: cover;
   background-position: center;
@@ -234,19 +234,19 @@ section {
 
 .card1 {
   grid-area: card1;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../assets/deal-bloom.png");
 }
 
 .card2 {
   grid-area: card2;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../assets/deal-ana.png");
 }
 
 .card3 {
   grid-area: card3;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../assets/deal-zabo.png");
 }
 
@@ -271,54 +271,92 @@ section {
   font-size: 28px;
   font-weight: 400;
 }
-    .newsletter {
-      background-image: url("../assets/news-letter-bg.png");
-      height: 533px; 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      gap: 24px;
-    }
+.newsletter {
+  background-image: url("../assets/news-letter-bg.png");
+  height: 533px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 24px;
+}
 
-    .bunch {
-      text-align: center;
-      color: rgba(255, 255, 255, 1);
-      font-size: 50px;
-      font-weight: 600;
-    }
+.bunch {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 50px;
+  font-weight: 600;
+}
 
-    .form {
-      display: flex;
-      justify-content: center;
-    }
+.form {
+  display: flex;
+  justify-content: center;
+}
 
-    .email {
-      width: 644px;
-      height: 50px;
-      outline: none;
-      padding-left: 20px;
-      border: none;
-      font-size: 16px;
-    }
+.email {
+  width: 644px;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  border: none;
+  font-size: 16px;
+}
 
-    .email::placeholder {
-      font-size: 16px;
-      color: #00000080;
-    }
+.email::placeholder {
+  font-size: 16px;
+  color: #00000080;
+}
 
-    .subscribe {
-      width: 186px;
-      height: 50px;
-      background-color: #e95a08;
-      color: rgba(255, 255, 255, 1);
-      font-size: 16px;
-      font-weight: 500;
-      border: none;
-    }
+.subscribe {
+  width: 186px;
+  height: 50px;
+  background-color: #e95a08;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+.footer {
+  display: flex;
+  gap: 110px;
+  margin-bottom: 20px;
+}
+.footer-logo p {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 360px;
+}
+.divide {
+  display: flex;
+  gap: 110px;
+}
+
+.part1,
+.part2 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #00000080;
+  font-size: 16px;
+}
+.social-media {
+  margin-left: 12px;
+  display: flex;
+  gap: 32px;
+}
+.social-media img {
+  width: 32px;
+  height: 32px;
+}
 
 @media screen and (max-width: 576px) {
   section {
@@ -411,13 +449,16 @@ section {
   .plants-lover {
     margin-top: 0;
   }
+  
+
+
   .lover-heading {
     padding: 0 20px;
     font-size: 20px;
   }
+ 
   .lover-paragraph {
     font-size: 14px;
-    padding: 0 20px;
   }
   .deals {
     margin-top: 0;
@@ -428,51 +469,85 @@ section {
     font-size: 14px;
     padding: 0 30px;
   }
-  .grid{
+  .grid {
     margin-top: 30px;
-     grid-template-columns: 1fr;  
-    grid-template-rows: auto;     
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "card1"
       "card2"
-      "card3";   
-      gap:20px;
-      padding: 0 20px;
+      "card3";
+    gap: 20px;
+    padding: 0 20px;
   }
-  .small, .large {
-    min-height: 170px; 
+  .small,
+  .large {
+    min-height: 170px;
     border-radius: 10px;
   }
-  .second-column h3{
+  .second-column h3 {
     font-size: 20px;
   }
-  .second-column a{
+  .second-column a {
     font-size: 16px;
   }
-    .newsletter {
-    height: auto;    
+  .newsletter {
+    height: auto;
     padding: 60px 20px;
     gap: 16px;
   }
 
   .bunch {
     margin-top: 10px;
-    font-size: 20px;   
+    font-size: 20px;
   }
 
   .form {
     align-items: center;
-    
   }
   .email {
-    width: 170px;
+    width: 180px;
     height: 45px;
   }
 
   .subscribe {
-    width:100px;
+    width: 100px;
     height: 45px;
   }
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
 
+  .footer-logo p {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 300px;
+  }
 
+  .divide {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .part1,
+  .part2 {
+    gap: 32px;
+  }
+
+  .footer a {
+    font-size: 16px;
+  }
+
+  .social-media {
+    margin-left: 0;
+    gap: 24px;
+  }
+  .social-media img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 50px;
+  }
 }
