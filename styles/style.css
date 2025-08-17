@@ -235,19 +235,19 @@ section {
 .card1 {
   grid-area: card1;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("/assets/deal-bloom.png");
+    url("../assets/deal-bloom.png");
 }
 
 .card2 {
   grid-area: card2;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("/assets/deal-ana.png");
+    url("../assets/deal-ana.png");
 }
 
 .card3 {
   grid-area: card3;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("/assets/deal-zabo.png");
+    url("../assets/deal-zabo.png");
 }
 
 .first-column h3 {
