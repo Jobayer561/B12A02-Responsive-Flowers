@@ -453,13 +453,15 @@ section {
 
 
   .lover-heading {
-    padding: 0 20px;
     font-size: 20px;
+    padding-left: 20px;
   }
  
   .lover-paragraph {
     font-size: 14px;
+    
   }
+
   .deals {
     margin-top: 0;
     font-size: 24px;
